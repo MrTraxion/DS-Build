@@ -141,15 +141,11 @@ li {
   fill: var(--white);
 }
 
-@media screen and (min-width: 760px) {
-  .navigation {
-    width: 250px;
-  }
-  .header-text {
-    margin-left: 17rem;
-  }
-
-  .main-content {
-    margin-left: 17rem;
-  }
+.navigation.active {
+  width: 250px;
 }
+.header-text.active, .main-content.active {
+  margin-left: 17rem;
+}
+
+
