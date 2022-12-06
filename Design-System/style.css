@@ -1,0 +1,155 @@
+:root {
+  --font-dark: rgb(12, 1, 18);
+  --font-light: 252, 252, 255;
+  --white: rgb(252, 254, 255);
+  --grey: rgb(244, 249, 252);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: var(--font-dark);
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+body,
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  width: fit-content;
+  transition: 0.3s;
+}
+
+.active-link {
+  color: red;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.bold {
+  font-weight: 500;
+}
+
+.text h1,h2,h3 {
+  margin: 0;
+  padding: 2px;
+  
+}
+
+.title {
+  padding: 98px 40px 71px 40px;
+  min-width: max-content;
+
+}
+
+.catalog-title {
+  padding: 0px 40px 0px 40px;
+}
+
+.header-title {
+  color: rgba(var(--font-light), 0.7);
+}
+
+.header-subtitle {
+  color: rgb(var(--font-light));
+  font-size: 2.1rem;
+}
+
+.header-text {
+  top: 6rem;
+  position: absolute;
+
+  margin-left: 1rem;
+  transition: margin-left 0.5s;
+}
+
+.link {
+  padding: 16px 40px 16px 40px;
+  box-shadow: 0px 0px 0px 1px rgb(243, 243, 243);
+}
+.link:first-child {
+  box-shadow: 0px 0px 0px 1px rgb(243, 243, 243);
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.navigation {
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: fixed;
+  height: 100%;
+  width: 0px;
+  top: 0px;
+  left: 0px;
+  background-color: var(--white);
+  box-shadow: 0px 0px 0px 1px rgb(243, 243, 243);
+  transition: 0.5s;
+  z-index: 999;
+}
+
+.header {
+  height: 12rem;
+  background-color: rgb(38, 74, 106);
+  z-index: 998;
+}
+
+.main {
+  width: 100%;
+  height: calc(100vh - 12rem);
+  transition: margin-left 0.5s;
+  background-color: var(--grey);
+  z-index: 1;
+}
+.main-content {
+  padding: 15px 0px 15px 0px;
+  transition: margin-left 0.5s;
+  margin-left: 1rem;
+}
+
+.mobile-menu {
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  float: left;
+  position: relative;
+  top: 1rem;
+  left: 1rem;
+  cursor: pointer;
+}
+
+.bars g {
+  fill: var(--white);
+}
+
+@media screen and (min-width: 760px) {
+  .navigation {
+    width: 250px;
+  }
+  .header-text {
+    margin-left: 17rem;
+  }
+
+  .main-content {
+    margin-left: 17rem;
+  }
+}
