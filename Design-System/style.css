@@ -33,8 +33,23 @@ a {
   transition: 0.3s;
 }
 
-.active-link {
+.active-link a {
   color: red;
+}
+
+.sub-links{
+  display: none;
+  box-shadow: none;
+}
+.sub-links .link {
+  padding: 16px 40px 16px 50px;
+
+}
+
+.sub-links.visible{
+  display: block;
+
+
 }
 
 ul,
@@ -124,6 +139,13 @@ li {
   padding: 15px 0px 15px 0px;
   transition: margin-left 0.5s;
   margin-left: 1rem;
+  margin-right: 1rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 2rem;
 }
 
 .mobile-menu {
