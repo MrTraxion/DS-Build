@@ -11,6 +11,9 @@ const currentPage = document.URL;
 // store the first element with a class named "navigation"
 const ignore = document.getElementsByClassName("navigation")[0];
 
+const headerTitle = document.getElementsByClassName("header-title")[0];
+const subTitle = document.getElementsByClassName("header-subtitle")[0];
+
 // Add class named "active" to all elements in dynamics
 function openMenu() {
   for (const dynamic of dynamics) {
@@ -23,26 +26,38 @@ function closeMenu() {
     dynamic.classList.remove('active');
   }
 }
+
+
+
+
+
 // Find current page and add a class named active-link" to it and make sublinks appear 
 function highlightCurrent() {
   for (let link of links) {
     if (link.firstChild.href == currentPage) {
       link.classList.add("active-link");
+    if (link.classList.contains("dropdown")) {
+      headerTitle.innerHTML = link.firstChild.textContent;
+      
+    }
       for (let subLink of subLinks) {
 
         switch (link.firstChild.textContent) {
           case 'Colors':
           case 'Typography':
           case 'Design': subLinks[0].classList.add("visible")
+          subTitle.innerHTML = link.firstChild.textContent;
             break;
           case 'Buttons':
           case 'Cards':
           case 'Components': subLinks[1].classList.add("visible")
+          subTitle.innerHTML = link.firstChild.textContent;
             break;
         }
       }
     }
   }
+  
 }
 
 // Highlight current Page element when the document is loaded. And check if the navigation needs to be open or closed 
