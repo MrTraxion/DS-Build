@@ -1,66 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Design System</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="style.css">
-  <title>Design System</title>
-
-</head>
-
-<body>
-  <div class="page">
-    <div class="container">
-
-      <div class="header">
-        <div class="mobile-menu">
-          <svg class="bars" height="20px" width="26px" viewBox="0 0 26 20">
-            <g>
-              <rect x="0" y="16" width="26" height="4"></rect>
-              <rect x="0" y="8" width="26" height="4"></rect>
-              <rect x="0" y="0" width="26" height="4"></rect>
-            </g>
-          </svg>
+  <body>
+    <div class="page">
+      <div class="container">
+        <div class="overlay"></div>
+        <div class="header">
+          <div class="mobile-menu">
+            <svg class="bars" height="20px" width="26px" viewBox="0 0 26 20">
+              <g>
+                <rect x="0" y="16" width="26" height="4"></rect>
+                <rect x="0" y="8" width="26" height="4"></rect>
+                <rect x="0" y="0" width="26" height="4"></rect>
+              </g>
+            </svg>
+          </div>
+          <div class="header-text dynamic">
+            <h3 class="header-title"></h3>
+            <h2 class="header-subtitle"></h2>
+          </div>
         </div>
-        <div class="header-text dynamic">
-          <h3 class="header-title">Components</h3>
-          <h2 class="header-subtitle">Cards</h2>
+        <div class="navigation dynamic">
+          <h3 class="title bold">Design System</h3>
+          <div class="content">
+            <ul class="links">
+              <li class="link"><a href="index.html">Home</a></li>
+              <li class="link dropdown"><a href="design.html">Design</a></li>
+              <div class="sub-links Design">
+                <li class="link sublink"><a href="colors.html">Colors</a></li>
+                <li class="link sublink"><a href="typography.html">Typography</a></li>
+              </div>
+              <li class="link dropdown"><a href="components.html">Components</a></li>
+              <div class="sub-links Components">
+                <li class="link sublink"><a href="cards.html">Cards</a></li>
+                <li class="link sublink"><a href="buttons.html">Buttons</a></li>
+              </div>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="navigation dynamic">
-        <h3 class="title bold">Design System</h3>
-        <div class="content">
-          <ul class="links">
-            <li class="link"><a href="index.html">Home</a></li>
-            <li class="link dropdown"><a href="design.html">Design</a></li>
-            <div class="sub-links">
-              <li class="link sublink"><a href="colors.html">Colors</a></li>
-              <li class="link sublink"><a href="typography.html">Typography</a></li>
+        <div class="main">
+          <div class="main-content dynamic">
+            <div class="grid">
+              <div class="block">
+                <h2>Title</h2>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui
+                  sed voluptas soluta hic iste necessitatibus. Veritatis,
+                  voluptates itaque debitis, voluptatem quos porro, possimus
+                  ducimus vitae unde facere blanditiis praesentium
+                  voluptatum!Lorem ipsum dolor sit, amet consectetur adipisicing
+                  elit. Qui sed voluptas soluta hic iste necessitatibus.
+                  Veritatis, voluptates itaque debitis, voluptatem quos porro,
+                  possimus ducimus vitae unde facere blanditiis praesentium
+                  voluptatum!
+                </p>
+              </div>
             </div>
-            <li class="link dropdown"><a href="components.html">Components</a></li>
-            <div class="sub-links">
-              <li class="link sublink"><a href="cards.html">Cards</a></li>
-              <li class="link sublink"><a href="buttons.html">Buttons</a></li>
-            </div>
-          </ul>
-        </div>
-      </div>
-      <div class="main">
-        <div class="main-content dynamic">
-          <div class="grid">
-
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <script src="script.js"></script>
-</body>
-
+    <script src="js/script.js"></script>
+  </body>
 </html>
