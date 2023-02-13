@@ -16,6 +16,12 @@ const subTitle = document.getElementsByClassName("header-subtitle")[0];
 // store the overlay element
 const overlay = document.getElementsByClassName("overlay")[0];
 
+const codeButtons = document.getElementsByClassName("button-container");
+const codeFragments = document.getElementsByClassName("code-fragment");
+const html = document.getElementsByClassName("html");
+const css = document.getElementsByClassName("css");
+const js = document.getElementsByClassName("js");
+
 // Add class named "active" to all elements in dynamics
 function openMenu() {
   for (const dynamic of dynamics) {
@@ -72,6 +78,11 @@ function highlightCurrent() {
             subLinks[1].classList.add("visible");
             subTitle.innerHTML = link.firstChild.textContent;
             break;
+            case "Icons":
+              headerTitle.innerHTML = subLinks[0].classList[1];
+              subLinks[0].classList.add("visible");
+              subTitle.innerHTML = link.firstChild.textContent;
+              break;
         }
       }
     }
@@ -119,3 +130,41 @@ menuButton.addEventListener("click", function () {
   }
   overlay.classList.add("active");
 });
+
+// HTML CSS JS Buttons
+for (i = 0; i < codeButtons.length; i++) {
+  codeButtons[i].addEventListener("click", (e) => {
+    const index = e.target.parentElement.id.replace(/\D/g,'');
+    for(const codeFragment of codeFragments){
+      codeFragment.classList.remove("active");
+  
+    };
+      switch (e.target.textContent) {
+        case "HTML":
+          
+          e.target.classList.add("active");
+          js[index].classList.remove("active");
+          css[index].classList.remove("active");
+          html[index].classList.add("active");
+          break;
+          case "CSS":
+            
+            e.target.classList.add("active");
+            js[index].classList.remove("active");
+            html[index].classList.remove("active");
+            css[index].classList.add("active");
+           
+            break;
+            case "JS":
+              
+              e.target.classList.add("active");
+              css[index].classList.remove("active");
+              html[index].classList.remove("active");
+              js[index].classList.add("active");
+             
+           break;
+      }  
+  });
+}
+
+
