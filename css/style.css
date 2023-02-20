@@ -239,7 +239,7 @@ padding: 5px 0px 5px 0px
 .checker {
   align-items: center;
   justify-content: center;
-  background-image: url(/assets/bg-checker.png);
+  background-image: url(../assets/bg-checker.png);
   padding: 1.5rem;
   display: flex;
 }
@@ -298,7 +298,7 @@ justify-content: center;
   height: 12rem;
   float: left;
   border-radius: 15px;
-  background-image: url(/assets/semyon-borisov-D9rw_J7d68k-unsplash.jpg);
+  background-image: url(../assets/semyon-borisov-D9rw_J7d68k-unsplash.jpg);
   background-size: cover;
 }
 
