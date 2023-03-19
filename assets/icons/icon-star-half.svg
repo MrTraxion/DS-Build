@@ -1,0 +1,4 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" focusable="false" viewBox="0 0 24 24" class="pip-svg-icon pip-ratings-bar__star pip-ratings-bar__star--half" aria-hidden="true" width="24" height="24">
+  <path d="m17.1991 20-5.1987-2.2909V4l2.8593 4.9091 5.5524 1.2024-3.7853 4.2363L17.1991 20z" fill="#DFDFDF"></path>
+  <path d="m6.8009 20 5.1987-2.2909V4L9.1403 8.9091l-5.5524 1.2024 3.7853 4.2363L6.8008 20z" fill="#111111"></path>
+</svg>

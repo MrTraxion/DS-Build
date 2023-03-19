@@ -28,6 +28,21 @@ h4 {
   font-weight: 400;
 }
 
+h1 {
+  font-size: 2.25rem;
+
+}
+h2 {
+  font-size: 1.5rem;
+
+}
+h3 {
+  font-size: 1rem;
+}
+.h-typo{
+  font-weight: 700;
+  padding-bottom: 1.5rem;
+}
 a {
   text-decoration: none;
   color: inherit;
@@ -38,6 +53,8 @@ a {
 .italic {
 font-style: italic;  
 }
+
+
 
 .grid svg{
   width: 55px;
@@ -321,7 +338,7 @@ color: var(--white);
 .checker {
   align-items: center;
   justify-content: center;
-  background-image: url(/assets/bg-checker.png);
+  background-image: url(assets/bg-checker.png);
   padding: 1.5rem;
   display: flex;
 }
@@ -376,7 +393,7 @@ justify-content: center;
   width: 20rem;
   height: 35rem;
   border-radius: .5rem;
-  background-image: url(/assets/semyon-borisov-D9rw_J7d68k-unsplash.jpg);
+  background-image: url(assets/card-example-semyon-borisov-unsplash.jpg);
   background-size: cover;
 }
 
