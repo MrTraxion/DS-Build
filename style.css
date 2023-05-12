@@ -75,7 +75,8 @@ display: block;
 }
 
 .active-link a {
-  color: red;
+  color: #0071CC;
+  font-weight: 600;
 }
 
 .sub-links{
@@ -118,9 +119,26 @@ li {
   max-width: 760px;  
 }
 
+.logo-box{
+  color: var(--darkblue);
+  width: 250px;
+  height: 192px;
+  background-color: #FBD914;
+}
+
+.logo-box h1{
+
+font-weight: 700;
+padding: 60px 40px 10px;
+}
+
+.logo-box h3{
+
+  padding: 0px 40px 0px 40px;
+}
 
 .title {
-  padding: 98px 40px 71px 40px;
+
   min-width: max-content;
 
 }
